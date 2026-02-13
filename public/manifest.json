@@ -1,0 +1,33 @@
+{
+  "name": "Lady Violet's Hacker Terminal",
+  "short_name": "LadyViolet",
+  "description": "The world's sleekest cyberpunk hacker terminal for ethical hacking education",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#00ffff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/lady-violet-avatar.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/images/lady-violet-avatar.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["developer", "education", "security"],
+  "screenshots": [
+    {
+      "src": "/images/lady-violet-avatar.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ]
+}
