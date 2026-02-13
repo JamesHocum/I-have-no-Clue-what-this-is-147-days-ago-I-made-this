@@ -3,102 +3,86 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Updated color palette to cyberpunk theme with cyan primary, orange accents, and dark backgrounds */
 :root {
   --background: oklch(0.98 0 0);
-  --foreground: oklch(0.15 0 0);
+  --foreground: oklch(0.3 0 0);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.15 0 0);
+  --card-foreground: oklch(0.3 0 0);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.15 0 0);
-  --primary: oklch(0.55 0.25 305);
+  --popover-foreground: oklch(0.3 0 0);
+  --primary: oklch(0.6 0.15 200);
   --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.96 0 0);
-  --secondary-foreground: oklch(0.15 0 0);
+  --secondary: oklch(0.65 0.2 35);
+  --secondary-foreground: oklch(1 0 0);
   --muted: oklch(0.96 0 0);
-  --muted-foreground: oklch(0.45 0 0);
-  --accent: oklch(0.7 0.25 330);
+  --muted-foreground: oklch(0.5 0 0);
+  --accent: oklch(0.65 0.2 35);
   --accent-foreground: oklch(1 0 0);
-  --destructive: oklch(0.55 0.2 25);
+  --destructive: oklch(0.6 0.25 25);
   --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.9 0 0);
-  --input: oklch(0.9 0 0);
-  --ring: oklch(0.55 0.25 305 / 0.4);
+  --border: oklch(0.3 0 0);
+  --input: oklch(1 0 0);
+  --ring: oklch(0.6 0.15 200 / 0.5);
+  --chart-1: oklch(0.65 0.2 35);
+  --chart-2: oklch(0.6 0.15 200);
+  --chart-3: oklch(0.65 0.2 35);
+  --chart-4: oklch(0.3 0 0);
+  --chart-5: oklch(1 0 0);
   --radius: 0.5rem;
-  --sidebar: oklch(0.96 0 0);
-  --sidebar-foreground: oklch(0.15 0 0);
-  --sidebar-primary: oklch(0.55 0.25 305);
+  --sidebar: oklch(0.3 0 0);
+  --sidebar-foreground: oklch(1 0 0);
+  --sidebar-primary: oklch(0.6 0.15 200);
   --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.93 0 0);
-  --sidebar-accent-foreground: oklch(0.15 0 0);
-  --sidebar-border: oklch(0.9 0 0);
-  --sidebar-ring: oklch(0.55 0.25 305 / 0.4);
+  --sidebar-accent: oklch(0.65 0.2 35);
+  --sidebar-accent-foreground: oklch(1 0 0);
+  --sidebar-border: oklch(0.3 0 0);
+  --sidebar-ring: oklch(0.6 0.15 200 / 0.5);
+
+  /* Added cyberpunk-specific color variables */
+  --neon-cyan: oklch(0.7 0.2 200);
+  --neon-pink: oklch(0.7 0.25 330);
+  --neon-green: oklch(0.7 0.2 140);
+  --neon-orange: oklch(0.7 0.25 35);
+  --terminal-bg: oklch(0.05 0 0);
+  --terminal-text: oklch(0.9 0.1 200);
+  --glow-effect: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
 }
 
-/* Cyberpunk dark theme */
+/* Updated dark theme with cyberpunk colors and terminal aesthetics */
 .dark {
-  --background: oklch(0.06 0.005 285);
-  --foreground: oklch(0.85 0 0);
-  --card: oklch(0.1 0.005 285);
-  --card-foreground: oklch(0.85 0 0);
-  --popover: oklch(0.1 0.005 285);
-  --popover-foreground: oklch(0.85 0 0);
-  --primary: oklch(0.7 0.25 305);
+  --background: oklch(0.05 0 0);
+  --foreground: oklch(0.9 0.1 200);
+  --card: oklch(0.1 0 0);
+  --card-foreground: oklch(0.9 0.1 200);
+  --popover: oklch(0.1 0 0);
+  --popover-foreground: oklch(0.9 0.1 200);
+  --primary: oklch(0.7 0.2 200);
   --primary-foreground: oklch(0.05 0 0);
-  --secondary: oklch(0.15 0.005 285);
-  --secondary-foreground: oklch(0.85 0 0);
-  --muted: oklch(0.15 0.005 285);
-  --muted-foreground: oklch(0.55 0 0);
-  --accent: oklch(0.65 0.25 330);
+  --secondary: oklch(0.7 0.25 35);
+  --secondary-foreground: oklch(0.05 0 0);
+  --muted: oklch(0.15 0 0);
+  --muted-foreground: oklch(0.6 0.1 200);
+  --accent: oklch(0.7 0.25 35);
   --accent-foreground: oklch(0.05 0 0);
-  --destructive: oklch(0.6 0.2 25);
-  --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.2 0.01 285);
-  --input: oklch(0.12 0.005 285);
-  --ring: oklch(0.7 0.25 305 / 0.4);
-  --sidebar: oklch(0.08 0.005 285);
-  --sidebar-foreground: oklch(0.85 0 0);
-  --sidebar-primary: oklch(0.7 0.25 305);
+  --destructive: oklch(0.7 0.25 25);
+  --destructive-foreground: oklch(0.05 0 0);
+  --border: oklch(0.2 0 0);
+  --input: oklch(0.1 0 0);
+  --ring: oklch(0.7 0.2 200 / 0.5);
+  --chart-1: oklch(0.7 0.25 35);
+  --chart-2: oklch(0.7 0.2 200);
+  --chart-3: oklch(0.7 0.2 140);
+  --chart-4: oklch(0.7 0.25 330);
+  --chart-5: oklch(0.9 0.1 200);
+  --sidebar: oklch(0.08 0 0);
+  --sidebar-foreground: oklch(0.9 0.1 200);
+  --sidebar-primary: oklch(0.7 0.2 200);
   --sidebar-primary-foreground: oklch(0.05 0 0);
-  --sidebar-accent: oklch(0.15 0.01 285);
-  --sidebar-accent-foreground: oklch(0.85 0 0);
-  --sidebar-border: oklch(0.2 0.01 285);
-  --sidebar-ring: oklch(0.7 0.25 305 / 0.4);
-
-  /* Theme-specific neon colors */
-  --neon-primary: oklch(0.7 0.25 305);
-  --neon-secondary: oklch(0.65 0.25 330);
-  --neon-green: oklch(0.75 0.2 155);
-  --neon-cyan: oklch(0.75 0.15 195);
-  --neon-orange: oklch(0.72 0.2 50);
-  --terminal-green: oklch(0.75 0.25 155);
-}
-
-/* Synth theme override: orange neon */
-.dark.theme-synth {
-  --primary: oklch(0.72 0.2 50);
-  --primary-foreground: oklch(0.05 0 0);
-  --accent: oklch(0.72 0.2 50);
-  --accent-foreground: oklch(0.05 0 0);
-  --ring: oklch(0.72 0.2 50 / 0.4);
-  --neon-primary: oklch(0.72 0.2 50);
-  --neon-secondary: oklch(0.72 0.2 50);
-  --border: oklch(0.2 0.02 50);
-  --sidebar-primary: oklch(0.72 0.2 50);
-  --sidebar-border: oklch(0.2 0.02 50);
-}
-
-/* Hybrid theme: mixed cyan and magenta */
-.dark.theme-hybrid {
-  --primary: oklch(0.75 0.15 195);
-  --primary-foreground: oklch(0.05 0 0);
-  --accent: oklch(0.7 0.25 305);
-  --accent-foreground: oklch(0.05 0 0);
-  --ring: oklch(0.75 0.15 195 / 0.4);
-  --neon-primary: oklch(0.75 0.15 195);
-  --neon-secondary: oklch(0.7 0.25 305);
-  --border: oklch(0.2 0.01 195);
-  --sidebar-primary: oklch(0.75 0.15 195);
-  --sidebar-border: oklch(0.2 0.01 195);
+  --sidebar-accent: oklch(0.7 0.25 35);
+  --sidebar-accent-foreground: oklch(0.05 0 0);
+  --sidebar-border: oklch(0.2 0 0);
+  --sidebar-ring: oklch(0.7 0.2 200 / 0.5);
 }
 
 @theme inline {
@@ -123,6 +107,15 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
   --color-sidebar: var(--sidebar);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar-primary: var(--sidebar-primary);
@@ -131,14 +124,14 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --color-neon-green: var(--neon-green, oklch(0.75 0.2 155));
-  --color-neon-cyan: var(--neon-cyan, oklch(0.75 0.15 195));
-  --color-neon-orange: var(--neon-orange, oklch(0.72 0.2 50));
-  --color-terminal-green: var(--terminal-green, oklch(0.75 0.25 155));
+
+  /* Added cyberpunk utility classes */
+  --color-neon-cyan: var(--neon-cyan);
+  --color-neon-pink: var(--neon-pink);
+  --color-neon-green: var(--neon-green);
+  --color-neon-orange: var(--neon-orange);
+  --color-terminal-bg: var(--terminal-bg);
+  --color-terminal-text: var(--terminal-text);
 }
 
 @layer base {
@@ -150,63 +143,78 @@
   }
 }
 
+/* Fixed theme function calls to use proper color references */
 @layer utilities {
   .neon-glow {
-    text-shadow: 0 0 7px var(--primary), 0 0 15px var(--primary);
-  }
-
-  .neon-border {
-    border: 1px solid var(--primary);
-    box-shadow: 0 0 8px color-mix(in oklch, var(--primary) 40%, transparent),
-      inset 0 0 8px color-mix(in oklch, var(--primary) 10%, transparent);
+    text-shadow: var(--glow-effect);
   }
 
   .terminal-border {
-    border: 1px solid var(--primary);
-    box-shadow: 0 0 8px color-mix(in oklch, var(--primary) 30%, transparent);
+    border: 1px solid oklch(0.7 0.2 200);
+    box-shadow: 0 0 10px oklch(0.7 0.2 200 / 0.3);
   }
 
-  .status-dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    display: inline-block;
+  .cyberpunk-grid {
+    background-image: linear-gradient(rgba(0, 255, 255, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
   }
 
-  .status-dot-green {
-    background: oklch(0.75 0.25 155);
-    box-shadow: 0 0 6px oklch(0.75 0.25 155);
+  .decade-80s {
+    --primary: oklch(0.7 0.25 330); /* Hot pink */
+    --secondary: oklch(0.7 0.2 200); /* Cyan */
+    --accent: oklch(0.7 0.25 35); /* Orange */
   }
 
-  .scanline::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 2px,
-      oklch(0.5 0 0 / 0.03) 2px,
-      oklch(0.5 0 0 / 0.03) 4px
-    );
-    pointer-events: none;
+  .decade-90s {
+    --primary: oklch(0.7 0.2 140); /* Lime green */
+    --secondary: oklch(0.7 0.25 280); /* Purple */
+    --accent: oklch(0.7 0.25 60); /* Yellow */
   }
-}
 
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  .decade-2000s {
+    --primary: oklch(0.6 0.2 240); /* Blue */
+    --secondary: oklch(0.7 0.15 0); /* Silver */
+    --accent: oklch(0.5 0.2 25); /* Red */
+  }
+
+  .decade-2010s {
+    --primary: oklch(0.6 0.15 200); /* Teal */
+    --secondary: oklch(0.7 0.2 35); /* Orange */
+    --accent: oklch(0.6 0.2 140); /* Green */
+  }
+
+  .decade-modern {
+    --primary: oklch(0.7 0.2 200); /* Cyan */
+    --secondary: oklch(0.7 0.25 35); /* Orange */
+    --accent: oklch(0.7 0.25 330); /* Pink */
+  }
 }
 
 @keyframes pulse-neon {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.7; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
 }
 
-.animate-blink {
-  animation: blink 1s step-end infinite;
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
 }
 
 .animate-pulse-neon {
   animation: pulse-neon 2s ease-in-out infinite;
+}
+
+.animate-flicker {
+  animation: flicker 0.15s ease-in-out infinite alternate;
 }
