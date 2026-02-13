@@ -38,18 +38,6 @@ export function PWAInstaller() {
     window.addEventListener("online", handleOnline)
     window.addEventListener("offline", handleOffline)
 
-    // Register service worker
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker
-        .register("/sw.js")
-        .then((registration) => {
-          console.log("🔥 Lady Violet: Service Worker registered:", registration)
-        })
-        .catch((error) => {
-          console.log("🔥 Lady Violet: Service Worker registration failed:", error)
-        })
-    }
-
     return () => {
       window.removeEventListener("beforeinstallprompt", handleBeforeInstallPrompt)
       window.removeEventListener("online", handleOnline)
@@ -101,7 +89,7 @@ export function PWAInstaller() {
       window: {
         width: 1200,
         height: 800,
-        icon: "images/lady-violet-avatar.png",
+        icon: "images/lady-violet-avatar.jpg",
       },
       build: {
         appId: "com.ladyviolet.hackerterminal",

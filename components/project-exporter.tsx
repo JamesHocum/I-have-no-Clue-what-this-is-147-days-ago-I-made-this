@@ -75,13 +75,13 @@ export function ProjectExporter() {
         orientation: "portrait-primary",
         icons: [
           {
-            src: "/images/lady-violet-avatar.png",
+            src: "/images/lady-violet-avatar.jpg",
             sizes: "192x192",
             type: "image/png",
             purpose: "maskable",
           },
           {
-            src: "/images/lady-violet-avatar.png",
+            src: "/images/lady-violet-avatar.jpg",
             sizes: "512x512",
             type: "image/png",
             purpose: "any",
@@ -208,7 +208,7 @@ function createWindow() {
       nodeIntegration: true,
       contextIsolation: false
     },
-    icon: path.join(__dirname, 'images/lady-violet-avatar.png')
+    icon: path.join(__dirname, 'images/lady-violet-avatar.jpg')
   });
 
   mainWindow.loadFile('build/index.html');

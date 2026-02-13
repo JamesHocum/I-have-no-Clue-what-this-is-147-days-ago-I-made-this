@@ -2,7 +2,7 @@ const CACHE_NAME = "lady-violet-terminal-v1"
 const urlsToCache = [
   "/",
   "/manifest.json",
-  "/images/lady-violet-avatar.png",
+  "/images/lady-violet-avatar.jpg",
   // Add other static assets
 ]
 
