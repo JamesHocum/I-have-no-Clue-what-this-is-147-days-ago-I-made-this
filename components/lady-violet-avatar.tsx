@@ -81,7 +81,7 @@ export function LadyVioletAvatar() {
         <div className="text-center">
           <div className="relative w-32 h-32 mx-auto mb-4 group cursor-pointer" onClick={nextQuote}>
             <Image
-              src="/images/lady-violet-avatar.png"
+              src="/images/lady-violet-avatar.jpg"
               alt="Lady Violet - Cyberpunk Queen"
               fill
               className="rounded-full object-cover terminal-border transition-all group-hover:scale-105"

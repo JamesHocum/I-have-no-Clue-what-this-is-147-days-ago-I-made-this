@@ -9,13 +9,13 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/images/lady-violet-avatar.png",
+      "src": "/images/lady-violet-avatar.jpg",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/images/lady-violet-avatar.png",
+      "src": "/images/lady-violet-avatar.jpg",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
@@ -24,7 +24,7 @@
   "categories": ["developer", "education", "security"],
   "screenshots": [
     {
-      "src": "/images/lady-violet-avatar.png",
+      "src": "/images/lady-violet-avatar.jpg",
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide"
